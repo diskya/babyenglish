@@ -13,7 +13,7 @@
     `DEBUG = False`   
     `ALLOWED_HOSTS = ['*']`  
     `CSRF_TRUSTED_ORIGINS = ['https://*.azurewebsites.net',]`  
-    Also, add Whitenose as MIDDLEWARE MIDDLEWARE `'whitenoise.middleware.WhiteNoiseMiddleware'`  
+    Also, add Whitenose as MIDDLEWARE `'whitenoise.middleware.WhiteNoiseMiddleware'`  
 
 
 ![alt tag](cover.png)
