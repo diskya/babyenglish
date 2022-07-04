@@ -4,7 +4,7 @@ class Word(models.Model):
     text = models.CharField(max_length=50, unique=True)
     translate = models.CharField(max_length=200)
     add_date = models.DateTimeField(auto_now_add=True)
-    image = models.ImageField(upload_to='words_learn', blank=True)
+    image = models.ImageField(upload_to='static/words_learn/media/', blank=True)
     proficiency = models.IntegerField(default=0)
     idle_time = models.IntegerField(default=0)
 

@@ -28,6 +28,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.azurewebsites.net',
+    ]
 
 # Application definition
 
@@ -119,13 +122,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# MEDIA_URL = 'static/media/'
+# MEDIA_ROOT = 'media/'
+
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-MEDIA_ROOT = BASE_DIR / 'media/'
-
-# STATICFILES_DIRS = [
-#     BASE_DIR / "media",
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
