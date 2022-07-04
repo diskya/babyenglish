@@ -1,3 +1,4 @@
 .vscode
 db.sqlite3_bak
 notes
+__pycache__
